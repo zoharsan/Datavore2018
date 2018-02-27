@@ -1,0 +1,59 @@
+{
+ "type": "record",
+ "namespace": "hortonworks.hdp.refapp.twitterapp",
+ "name": "twitter_feed",
+ "fields": [
+  {
+   "name": "tweet_id",
+   "type": "long"
+  },
+  {
+   "name": "tweet_unixtime",
+   "type": "long"
+  },
+  {
+   "name": "tweet_time",
+   "type": "string"
+  },
+  {
+   "name": "tweet_tz",
+   "type": [
+    "string",
+    "null"
+   ],
+   "default": "unknown"
+  },
+  {
+   "name": "tweet_handle",
+   "type": "string"
+  },
+  {
+   "name": "tweet_user",
+   "type": [
+    "string",
+    "null"
+   ],
+   "default": "unknown"
+  },
+  {
+   "name": "tweet_followers",
+   "type": [
+    "int",
+    "null"
+   ],
+   "default": 0
+  },
+  {
+   "name": "tweet_hashtags",
+   "type": [
+    "string",
+    "null"
+   ],
+   "default": "none"
+  },
+  {
+   "name": "tweet_text",
+   "type": "string"
+  }
+ ]
+}
